@@ -1,0 +1,122 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{fancyhdr} %Header e Footer
+\usepackage{titling} %Spaziatura Titolo
+\usepackage{enumitem}
+\usepackage{setspace} 
+\usepackage{siunitx} %Notazione scientifica e unità di misura
+\usepackage{parskip} %Spaziatura paragrafi automatica
+\usepackage{graphicx} %Imaggini
+\usepackage{float} 
+\usepackage{booktabs}
+\usepackage[
+    top=3cm,    
+    bottom=2cm, 
+    left=1.5cm,   
+    right=1.5cm,
+    headheight=15pt]{geometry} %Margini
+\usepackage[colorlinks=true, linkcolor=cyan]{hyperref} %Colore link
+\usepackage{amsmath}
+\usepackage[italian, capitalize]{cleveref} %Nuovo nome refernce
+\usepackage{caption}
+
+\setstretch{0.85}
+\title{2° Esperienza Laboratorio di Fisica 2} %NUMERO ESPERIENZA   
+\author{Gruppo B02: Bifulco Flavio DC6000147 - De Marco Alessandro DC6000138 - \\ De Simone Adriano DC6000154}
+\date{23/09/2026} %DATA
+\setlength{\droptitle}{-2cm}
+
+% Titolo in grassetto e riduzione spazio sotto 
+\pretitle{\begin{center}\huge\bfseries} 
+\posttitle{\par\end{center}} 
+
+% Autore più piccolo 
+\preauthor{\begin{center}\small} 
+\postauthor{\par\end{center}}
+
+\postdate{
+    \par\end{center} 
+    \vspace{0.5em}   
+    \begin{center}
+        \textit{\textbf{\Large Stima di una resistenza con metodo il Volt-Amperometrico}} %TITOLO
+    \end{center}
+    \vspace{0.5cm} 
+}
+
+\newcommand{\E}{\`E } % Comando per "è" grande
+
+\graphicspath{{./immagini/}}
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+\addto\captionsitalian{\renewcommand{\figurename}{Immagine}}
+\crefname{figure}{Immagine}{immagini}
+\makeatletter
+\@addtoreset{figure}{section}
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+
+% Configurazione Header
+\fancyhead[L]{Gruppo B02: Bifulco Flavio - De Marco Alessandro - De Simone Adriano}       
+\fancyhead[R]{\thedate}                
+\renewcommand{\headrulewidth}{0pt}
+\addtolength{\headsep}{10pt}
+
+% Configurazione Footer
+\fancyfoot[C]{\thepage} 
+
+\sisetup{
+    output-decimal-marker = {,},
+    separate-uncertainty = true,
+    per-mode = fraction
+}
+\DeclareSIUnit\cal{cal}
+
+\renewcommand{\thesection}{\arabic{section})}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection})}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection})}
+\renewcommand{\theHsection}{\arabic{section}}
+\renewcommand{\theHsubsection}{\arabic{section}.\arabic{subsection}}
+\renewcommand{\theHsubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+\hypersetup{bookmarksnumbered}
+\begin{document}
+\maketitle
+%\textbf{\Large Obiettivo:}
+%\begin{enumerate}[label=\arabic*), leftmargin=2cm]
+%    \item Verifica sperimentalmente la prima legge di Ohm con il metodo volt-amperometrico. 
+%\end{enumerate}
+%
+%\textbf{\Large Strumentazione:}
+%\begin{itemize}[label= -, leftmargin=2cm]
+%    \item Bilancia (\(\Delta G_\text{sens} = \qty{0.1}{\gram}\)).
+%    \item 
+%\end{itemize}
+%
+%\bigskip \bigskip
+%\noindent{\LARGE \textbf{Procedimento di misura e analisi dati: }}\(\)
+%\bigskip
+
+\section{Introduzione}
+
+\section{Apparato sperimentale}
+\begin{itemize}[leftmargin=2cm]
+    \item 
+\end{itemize}
+
+
+\section{Esperimento}
+\subsection{Introduzione}
+
+
+\subsection{\textbf{Misure acquisite}}
+
+
+\subsection{\textbf{Analisi dati}}
+
+
+%\renewcommand{\thesection}{}
+%\renewcommand{\thesubsection}{\arabic{subsection})}
+\section{Conclusioni} %Conclusioni
+
+\end{document}
