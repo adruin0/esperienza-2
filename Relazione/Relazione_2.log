@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.5.16)  14 OCT 2026 00:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.28)  14 OCT 2026 15:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"e:/varie/Università/Lab. Fisica 2/Esperienze/2° Esperienza/Relazione/Relazione_2.tex"
-(e:/varie/Università/Lab. Fisica 2/Esperienze/2° Esperienza/Relazione/Relazione_2.tex
+**"g:/Other computers/My Computer/Università/Lab. Fisica 2/Esperienze/2° Esperienza/Relazione/Relazione_2.tex"
+(g:/Other computers/My Computer/Università/Lab. Fisica 2/Esperienze/2° Esperienza/Relazione/Relazione_2.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
 (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -28,7 +28,7 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 ) (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2026/04/15 v26.6 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+Package: babel 2026/03/24 v26.5 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count283
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
@@ -223,7 +223,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen183
 \Gm@dimlist=\toks27
  (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2026-04-24 v7.01q Hypertext links for LaTeX
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
  (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ) (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
@@ -245,7 +245,7 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 \Hy@linkcounter=\count315
 \Hy@pagecounter=\count316
  (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2026-04-24 v7.01q Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 ) (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
@@ -253,24 +253,24 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count317
  (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2026-04-24 v7.01q Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 4070.
-Package hyperref Info: Hyper figures OFF on input line 4199.
-Package hyperref Info: Link nesting OFF on input line 4204.
-Package hyperref Info: Hyper index ON on input line 4207.
-Package hyperref Info: Plain pages OFF on input line 4214.
-Package hyperref Info: Backreferencing OFF on input line 4219.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4072.
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4466.
+Package hyperref Info: Bookmarks ON on input line 4468.
 \c@Hy@tempcnt=\count318
  (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4805.
+LaTeX Info: Redefining \url on input line 4807.
 \XeTeXLinkMargin=\dimen185
  (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -280,20 +280,20 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 \Fld@menulength=\count319
 \Field@Width=\dimen186
 \Fld@charsize=\dimen187
-Package hyperref Info: Hyper figures OFF on input line 6091.
-Package hyperref Info: Link nesting OFF on input line 6096.
-Package hyperref Info: Hyper index ON on input line 6099.
-Package hyperref Info: backreferencing OFF on input line 6106.
-Package hyperref Info: Link coloring ON on input line 6109.
-Package hyperref Info: Link coloring with OCG OFF on input line 6116.
-Package hyperref Info: PDF/A mode OFF on input line 6121.
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring ON on input line 6102.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
 \Hy@abspage=\count320
 \c@Item=\count321
 \c@Hfootnote=\count322
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2026-04-24 v7.01q Hyperref driver for pdfTeX
+File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
 \Fld@listcount=\count323
 \c@bookmark@seq@number=\count324
  (C:\Users\adria\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
@@ -507,9 +507,14 @@ Package hyperref Info: Link coloring ON on input line 83.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+<./immagini/ponte_wheatstone.png, id=31, 361.35pt x 260.975pt>
+File: ./immagini/ponte_wheatstone.png Graphic file (type png)
+<use ./immagini/ponte_wheatstone.png>
+Package pdftex.def Info: ./immagini/ponte_wheatstone.png  used on input line 128.
+(pdftex.def)             Requested size: 256.07481pt x 184.94312pt.
  [1
 
-{C:/Users/adria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Relazione_2.aux
+{C:/Users/adria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./immagini/ponte_wheatstone.png>] [2] (Relazione_2.aux
 Package cleveref Info: loaded `italian' language definitions on input line 7.
 Package cleveref Info: loaded `italian' language definitions on input line 8.
 )
@@ -518,20 +523,20 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
 Package rerunfilecheck Info: File `Relazione_2.out' has not changed.
-(rerunfilecheck)             Checksum: 62852D7336BE06454E121A30B76BD1CB;1004.
+(rerunfilecheck)             Checksum: 021AD136E1C2C8807F04CCD625D95F48;1050.
  ) 
 Here is how much of TeX's memory you used:
- 18575 strings out of 467690
- 369130 string characters out of 5414966
- 796544 words of memory out of 5000000
- 47465 multiletter control sequences out of 15000+600000
- 631878 words of font info for 53 fonts, out of 8000000 for 9000
+ 18615 strings out of 467691
+ 369112 string characters out of 5414987
+ 801598 words of memory out of 5000000
+ 47491 multiletter control sequences out of 15000+600000
+ 635667 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,5n,80p,608b,1048s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\adria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\adria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx2488.pk><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Relazione_2.pdf (1 page, 59687 bytes).
+ 73i,13n,80p,630b,1051s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\adria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\adria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx2488.pk><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Relazione_2.pdf (2 pages, 133365 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 110 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
+ 62 words of extra memory for PDF output out of 10000 (max. 10000000)
 
