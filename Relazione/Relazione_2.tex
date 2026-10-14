@@ -171,10 +171,33 @@ R(\(\Omega\)) & I(\(\unit{\micro\ampere}\)) & \(\Delta\)R(\(\Omega\)) & \(\Delta
 \subsection{\textbf{Analisi dati}}
 
 Tramite uno script di python è stato realizzato un grafico \(I / R_3\) ed è stato effettuato un fit 
-lineare del tipo \(I = A\cdot R + B\) per stimare il valore di \(R_3 \) 
+lineare del tipo \(I = A\cdot R + B\) per stimare il valore di \(R_3 \Rightarrow I = 0\). 
 
+\begin{figure}[H]
+    \centering
+    \caption{Grafico ponte di Wheatstone}
+    \includegraphics[width=0.8\textwidth]{grafico_wheatstone.png}
+    \label{fig:grafico_wheatstone}
+\end{figure}
 
+\E stato inoltre ottenuto il seguente grafico dei residui:
 
+\begin{figure}[H]
+    \centering
+    \caption{Residui ponte di Wheatstone}
+    \includegraphics[width=0.8\textwidth]{residui_wheatstone.png}
+    \label{fig:residui_wheatstone}
+\end{figure}
+
+Nel calcolo dell'incertezza di \(R_3\) è stato considerato anche il termine di covarianza tra \(A\) e 
+\(B\) attraverso la formula:
+
+\[\sigma_{R_3} = \frac{1}{A^2} \cdot \sigma^2_B + \frac{B^2}{A^4} \cdot \sigma^2_A + 
+2\left(-\frac{1}{A}\right)\left(+\frac{B}{A^2}\right)cov(A,B)\]
+
+Dal valore stimato di  \(R_3(0) = \qty{275.3(1.1)}{\ohm}\) è stato calcolato, attraverso la formula 
+precedentemente indicata, il valore stimato di \(R_x = \qty{148.8(0.9)}{\ohm}\) che è risultato consistente
+con il valore di \(R_4 = \qty{149(0.5)}{\ohm}\) misurato con l'RCL meter. 
 
 
 \section{Equivalenti di Thevelin}
