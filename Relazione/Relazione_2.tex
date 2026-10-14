@@ -98,21 +98,48 @@
 %\bigskip
 
 \section{Introduzione}
+L’esperienza ha due scopi principali. Il primo obbiettivo è la misura di una resistenza incognita all'interno del ponte di Wheatstone di un circuito, sfruttando le proprietà della condizione di bilanciamento e l’utilizzo di una cassetta di resistenze variabile.
+Il secondo è la verifica sperimentale del teorema di Thevenin. Il teorema verrà applicato a un secondo circuito configurato come partitore resistivo e a un terzo circuito configurato per simulare la misura della resistenza interna di un generatore di tensione.
 
 \section{Apparato sperimentale}
 \begin{itemize}[leftmargin=2cm]
-    \item 
+    \item Generatore di f.e.m. continua (\(\Delta V_\text{sens} = \qty{0.01}{\Volt}\)). 
+    \item RCL meter.
+    \item Multimetro analogico (\textit{ICE SuperTester 680R}) 
+    \iten Multimetro digitale (\textit{Fluke 115})
+    \item Basetta e cavi.
+    \item Resistore di protezione.
+    \item Resistore a resistenza variabile.
+    \item Resistori noti.
 \end{itemize}
 
 
 \section{Esperimento}
 \subsection{Introduzione}
 
-
 \subsection{\textbf{Misure acquisite}}
 
 
 \subsection{\textbf{Analisi dati}}
+
+\section{Equivalenti di Thevelin}
+\subsection{Introduzione}
+In questa parte dell'esperimento dobbiamo verificare la veridicità del teorema di Thevelin, per fare ciò dovremmo misurare sperimentalmente, per tutti e due circuiti, una corrente di cortocircuito potenzialmente pericolosa. Sfruttiamo allora il metodo della curva caratteristica per entrambi.
+
+\subsection{Simulazione resistenza interna generatore}
+(METTI PRIMO CIRCUITO TH)
+Dall'applicazione del teorema in questa configurazione, ci troviamo le stime teoriche come segue: una resistenza  \(R_th \approx \qty{150}{\ohm}\) e un voltaggio \(V_th \approx \qty{10}{\volt}\), che corrispondono al circuito stesso.
+
+\subsection{\textbf{Misure acquisite}}
+In seguito le tuple di dati utilizzati per il metodo della curva caratteristica:
+(Per le incertezze ci si è affidati ai manuali di utilizzo degli strumenti)
+
+\subsection{\textbf{Analisi dati}}
+Procediamo con il fit del nostra curva caratteristica per trovare le seguenti stime sperimentali:
+(METTI FIT)
+Prima di confrontare i due diversi risultati e stabilire la veridicità del teorema, eseguiamo la misura della reistenza effettiva usata nel circuito con l'RCL meter. (Il voltaggio imposto lo consideriamo senza errore invece)
+Con una misura di \(R= \qty{149(0,5)}{\ohm}\) proseguiamo a verificare le consistenze dei dati:
+
 
 
 %\renewcommand{\thesection}{}
