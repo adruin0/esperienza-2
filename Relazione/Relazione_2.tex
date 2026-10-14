@@ -98,7 +98,7 @@
 %\bigskip
 
 \section{Introduzione}
-L’esperienza ha due scopi principali. Il primo obbiettivo è la misura di una resistenza incognita all'interno del ponte di Wheatstone di un circuito, sfruttando le proprietà della condizione di bilanciamento e l’utilizzo di una cassetta di resistenze variabile.
+L'esperienza ha due scopi principali. Il primo obbiettivo è la misura di una resistenza incognita all'interno del ponte di Wheatstone di un circuito, sfruttando le proprietà della condizione di bilanciamento e l’utilizzo di una cassetta di resistenze variabile.
 Il secondo è la verifica sperimentale del teorema di Thevenin. Il teorema verrà applicato a un secondo circuito configurato come partitore resistivo e a un terzo circuito configurato per simulare la misura della resistenza interna di un generatore di tensione.
 
 \section{Apparato sperimentale}
@@ -156,7 +156,7 @@ Di seguito sono riportati i valori misurati:
 \centering
 \begin{tabular}{@{}llll@{}}
 \toprule
-R(\(\Omega\)) & I(\(\unit{\micro\ampere}\)) & \(\Delta\)R(\(\Omega\)) & \(\Delta\)I(\(\unit{\micro\ampere}\)) \\ \midrule
+R(\unit{\ohm}) & I(\unit{\micro\ampere}) & \(\Delta\)R(\unit{\ohm}) & \(\Delta\)I(\unit{\micro\ampere}) \\ \midrule
 240         & 8.0   & 2                   & 0.3           \\
 250         & 6.0   & 3                   & 0.3           \\
 260         & 4.0   & 3                   & 0.3           \\
@@ -202,19 +202,66 @@ con il valore di \(R_4 = \qty{149(0.5)}{\ohm}\) misurato con l'RCL meter.
 
 \section{Equivalenti di Thevelin}
 \subsection{Introduzione}
-In questa parte dell'esperimento dobbiamo verificare la veridicità del teorema di Thevelin, per fare ciò dovremmo misurare sperimentalmente, per tutti e due circuiti, una corrente di cortocircuito potenzialmente pericolosa. Sfruttiamo allora il metodo della curva caratteristica per entrambi.
+In questa parte dell'esperimento dobbiamo verificare la veridicità del teorema di Thevelin, per fare 
+ciò dovremmo misurare sperimentalmente, per tutti e due circuiti, una corrente di cortocircuito 
+potenzialmente pericolosa. Sfruttiamo allora il metodo della curva caratteristica per entrambi.
 
 \subsection{Simulazione resistenza interna generatore}
-(METTI PRIMO CIRCUITO TH)
+
+\begin{figure}[H]
+    \centering
+    \caption{Circuito Thevenin resistenza interna}
+    \includegraphics[width=0.5\textwidth]{thevenin_1.png}
+    \label{fig:circuito_thevenin_1}
+\end{figure}
+
 Dall'applicazione del teorema in questa configurazione, ci troviamo le stime teoriche come segue: una resistenza  \(R_th \approx \qty{150}{\ohm}\) e un voltaggio \(V_th \approx \qty{10}{\volt}\), che corrispondono al circuito stesso.
 
 \subsubsection{\textbf{Misure acquisite}}
-In seguito le tuple di dati utilizzati per il metodo della curva caratteristica:
-(Per le incertezze ci si è affidati ai manuali di utilizzo degli strumenti)
+In seguito le tuple di dati utilizzati per il metodo della curva caratteristica,
+(Per le incertezze ci si è affidati ai manuali di utilizzo degli strumenti):
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+I(\unit{\milli\ampere}) & V(\unit{\volt}) & \(\Delta\)I(\unit{\milli\ampere}) & \(\Delta\)V(\unit{\volt}) \\ \midrule
+5.0   & 9.3  & 0.3    & 0.07  \\
+6.0   & 9.1  & 0.3    & 0.07  \\
+9.0   & 8.7  & 0.3    & 0.06  \\
+10.0  & 8.6  & 0.3    & 0.06  \\
+10.5  & 8.4  & 0.3    & 0.06  \\
+12.0  & 8.3  & 0.3    & 0.06  \\
+13.0  & 8.1  & 0.3    & 0.06  \\
+15.0  & 7.8  & 0.3    & 0.06  \\
+17.5  & 7.4  & 0.3    & 0.06  \\
+19.0  & 7.1  & 0.3    & 0.06  \\ \bottomrule
+\end{tabular}
+\end{table}
+
 
 \subsubsection{\textbf{Analisi dati}}
 Procediamo con il fit del nostra curva caratteristica per trovare le seguenti stime sperimentali:
-(METTI FIT)
+
+\begin{figure}[H]
+    \centering
+    \caption{Grafico Thevenin resistenza interna}
+    \includegraphics[width=0.8\textwidth]{grafico_thevenin_1.png}
+    \label{fig:grafico_thevenin_1}
+\end{figure}
+
+\E stato inoltre ottenuto il seguente grafico dei residui:
+
+\begin{figure}[H]
+    \centering
+    \caption{Residui Thevenin resistenza interna}
+    \includegraphics[width=0.8\textwidth]{residui_thevenin_1.png}
+    \label{fig:residui_thevenin_1}
+\end{figure}
+
+
+
+
 Prima di confrontare i due diversi risultati e stabilire la veridicità del teorema, eseguiamo la misura della reistenza effettiva usata nel circuito con l'RCL meter. (Il voltaggio imposto lo consideriamo senza errore invece)
 Con una misura di \(R= \qty{149(0,5)}{\ohm}\) proseguiamo a verificare le consistenze dei dati:
 
