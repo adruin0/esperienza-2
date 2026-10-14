@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.28)  14 OCT 2026 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.28)  14 OCT 2026 17:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -510,7 +510,7 @@ Package caption Info: End \AtBeginDocument code.
 <./immagini/ponte_wheatstone.png, id=63, 361.35pt x 260.975pt>
 File: ./immagini/ponte_wheatstone.png Graphic file (type png)
 <use ./immagini/ponte_wheatstone.png>
-Package pdftex.def Info: ./immagini/ponte_wheatstone.png  used on input line 137.
+Package pdftex.def Info: ./immagini/ponte_wheatstone.png  used on input line 138.
 (pdftex.def)             Requested size: 256.07481pt x 184.94312pt.
  [1
 
@@ -580,7 +580,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  73i,13n,80p,630b,1078s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\adria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\adria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx2488.pk><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Relazione_2.pdf (8 pages, 358492 bytes).
+Output written on Relazione_2.pdf (8 pages, 358916 bytes).
 PDF statistics:
  207 PDF objects out of 1000 (max. 8388607)
  36 named destinations out of 1000 (max. 500000)
