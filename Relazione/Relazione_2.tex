@@ -105,12 +105,59 @@
 \end{itemize}
 
 
-\section{Esperimento}
+\section{Ponte di Wheatstone}
 \subsection{Introduzione}
+Per misurare una resistenza incognita del ponte di Wheatstone si è ricercata la condizione di 
+bilanciamento del ponte. Per fare ciò è stato utilizzato un amperometro analogico per misurare il 
+flusso di corrente tra i due lati del ponte e un resistore variabile per modificare la condizioni del
+ponte. Una volta ottenute varie misure della corrente al variare della resistenza variabile, si 
+effettua un fit per stimare in maniera più precisa la condizione di equilibrio, dove la resistenza 
+variabile corrisponderà alla resistenza incognita.
 
+Alla condizione di bilanciamento si verifica: \(R_4 = \frac{R_2 \cdot R_3}{R_1}\)
 
 \subsection{\textbf{Misure acquisite}}
 
+\E stato realizzato un circuito elettrico utilizzando la basetta e icavi a disposizione. Il resistore 
+\(R_0 = \qty{4.69(0.01)}{\kilo\ohm}\) di protezione è stato inserito per limitare la corrente nel 
+circuto.
+
+\begin{figure}[H]
+    \centering
+    \caption{Ponte di Wheatstone}
+    \includegraphics[width=0.5\textwidth]{ponte_wheatstone.png}
+    \label{fig:ponte_wheatstone}
+\end{figure}
+
+Il generatore di tensione è stato impostato per erogare una d.d.p. costante pari a 
+\(V_0 = \qty{15}{\volt}\), il fondoscala dell'amperometro è stato impostato su \qty{500}{\micro\ampere}.
+Dopo aver effettuato una scansione rapida della resistenza variabile, per trovare una regione approssimata 
+della condizione di bilanciamento del ponte, si è proceduto variando la resistenza con un passo di \qty{10}{\ohm}
+tra un valore minimo di \qty{240}{\ohm} e un valore massimo di \qty{310}{\ohm}. L'incertezza delle 
+misure della resistenza variabile è stata presa come l'1\% (come indicato sul resistore variabile), 
+mentre per le misure della corrente è stata usata la formula \(\sigma = \frac{\delta}{\sqrt{12}}\) per
+trasformare gli errori massimi in errori statistici.
+
+I valori delle resistenze \(R_1 = \qty{220(0.6)}{\ohm}\) e \(R_2 = \qty{118.9(0.4)}{\ohm}\) sono stati
+misurati utilizzando l'RCL meter e le loro incertezze caclolate utilizzando la formula data dal costruttore.
+
+Di seguito sono riportati i valori misurati:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+R(\(\Omega\)) & I(\(\unit{\micro\ampere}\)) & \(\Delta\)R(\(\Omega\)) & \(\Delta\)I(\(\unit{\micro\ampere}\)) \\ \midrule
+240         & 8.0   & 2                   & 0.3           \\
+250         & 6.0   & 3                   & 0.3           \\
+260         & 4.0   & 3                   & 0.3           \\
+270         & 1.5   & 3                   & 0.3           \\
+280         & -1.5  & 3                   & 0.3           \\
+290         & -3.5  & 3                   & 0.3           \\
+300         & -6.0  & 3                   & 0.3           \\
+310         & -8.0  & 3                   & 0.3           \\ \bottomrule
+\end{tabular}
+\end{table}
 
 \subsection{\textbf{Analisi dati}}
 
