@@ -116,14 +116,15 @@ Il secondo è la verifica sperimentale del teorema di Thevenin. Il teorema verr�
 
 \section{Ponte di Wheatstone}
 \subsection{Introduzione}
-Per misurare una resistenza incognita del ponte di Wheatstone si è ricercata la condizione di 
+Per misurare una resistenza del ponte di Wheatstone lasciata come incognita (\(R_4\)) si è ricercata la condizione di 
 bilanciamento del ponte. Per fare ciò è stato utilizzato un amperometro analogico per misurare il 
-flusso di corrente tra i due lati del ponte e un resistore variabile per modificare la condizioni del
+flusso di corrente e un resistore variabile su (\(R_3)\) per modificare la condizioni del
 ponte. Una volta ottenute varie misure della corrente al variare della resistenza variabile, si 
-effettua un fit per stimare in maniera più precisa la condizione di equilibrio, dove la resistenza 
-variabile corrisponderà alla resistenza incognita.
+effettua un fit per stimare in maniera più precisa la condizione di equilibrio, e il valore della resistenza variabile che lo soddisfa.
 
-Alla condizione di bilanciamento si verifica: \(R_4 = \frac{R_2 \cdot R_3}{R_1}\)
+Alla condizione di bilanciamento si verifica che la resistenza incognita risulta: \(R_4 = \frac{R_2 \cdot R_3}{R_1}\)
+
+(Si controlli la figura per la nomenclatura)
 
 \subsection{\textbf{Misure acquisite}}
 
@@ -140,8 +141,7 @@ circuto.
 
 Il generatore di tensione è stato impostato per erogare una d.d.p. costante pari a 
 \(V_0 = \qty{15}{\volt}\), il fondoscala dell'amperometro è stato impostato su \qty{500}{\micro\ampere}.
-Dopo aver effettuato una scansione rapida della resistenza variabile, per trovare una regione approssimata 
-della condizione di bilanciamento del ponte, si è proceduto variando la resistenza con un passo di \qty{10}{\ohm}
+Si è proceduto variando la resistenza variabiole con un passo di \qty{10}{\ohm}
 tra un valore minimo di \qty{240}{\ohm} e un valore massimo di \qty{310}{\ohm}. L'incertezza delle 
 misure della resistenza variabile è stata presa come l'1\% (come indicato sul resistore variabile), 
 mentre per le misure della corrente è stata usata la formula \(\sigma = \frac{\delta}{\sqrt{12}}\) per
