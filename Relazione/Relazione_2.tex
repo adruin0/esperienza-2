@@ -103,10 +103,10 @@ Il secondo è la verifica sperimentale del teorema di Thevenin. Il teorema verr�
 
 \section{Apparato sperimentale}
 \begin{itemize}[leftmargin=2cm]
-    \item Generatore di f.e.m. continua (\(\Delta V_\text{sens} = \qty{0.01}{\Volt}\)). 
+    \item Generatore di f.e.m. continua (\(\Delta V_\text{sens} = \qty{0.01}{\volt}\)). 
     \item RCL meter.
     \item Multimetro analogico (\textit{ICE SuperTester 680R}) 
-    \iten Multimetro digitale (\textit{Fluke 115})
+    \item Multimetro digitale (\textit{Fluke 115})
     \item Basetta e cavi.
     \item Resistore di protezione.
     \item Resistore a resistenza variabile.
@@ -170,6 +170,13 @@ R(\(\Omega\)) & I(\(\unit{\micro\ampere}\)) & \(\Delta\)R(\(\Omega\)) & \(\Delta
 
 \subsection{\textbf{Analisi dati}}
 
+Tramite uno script di python è stato realizzato un grafico \(I / R_3\) ed è stato effettuato un fit 
+lineare del tipo \(I = A\cdot R + B\) per stimare il valore di \(R_3 \) 
+
+
+
+
+
 \section{Equivalenti di Thevelin}
 \subsection{Introduzione}
 In questa parte dell'esperimento dobbiamo verificare la veridicità del teorema di Thevelin, per fare ciò dovremmo misurare sperimentalmente, per tutti e due circuiti, una corrente di cortocircuito potenzialmente pericolosa. Sfruttiamo allora il metodo della curva caratteristica per entrambi.
@@ -178,17 +185,17 @@ In questa parte dell'esperimento dobbiamo verificare la veridicità del teorema 
 (METTI PRIMO CIRCUITO TH)
 Dall'applicazione del teorema in questa configurazione, ci troviamo le stime teoriche come segue: una resistenza  \(R_th \approx \qty{150}{\ohm}\) e un voltaggio \(V_th \approx \qty{10}{\volt}\), che corrispondono al circuito stesso.
 
-\subsection{\textbf{Misure acquisite}}
+\subsubsection{\textbf{Misure acquisite}}
 In seguito le tuple di dati utilizzati per il metodo della curva caratteristica:
 (Per le incertezze ci si è affidati ai manuali di utilizzo degli strumenti)
 
-\subsection{\textbf{Analisi dati}}
+\subsubsection{\textbf{Analisi dati}}
 Procediamo con il fit del nostra curva caratteristica per trovare le seguenti stime sperimentali:
 (METTI FIT)
 Prima di confrontare i due diversi risultati e stabilire la veridicità del teorema, eseguiamo la misura della reistenza effettiva usata nel circuito con l'RCL meter. (Il voltaggio imposto lo consideriamo senza errore invece)
 Con una misura di \(R= \qty{149(0,5)}{\ohm}\) proseguiamo a verificare le consistenze dei dati:
 
-
+\subsection{Partitore di tensione}
 
 %\renewcommand{\thesection}{}
 %\renewcommand{\thesubsection}{\arabic{subsection})}
