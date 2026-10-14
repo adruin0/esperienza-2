@@ -259,29 +259,77 @@ Procediamo con il fit del nostra curva caratteristica per trovare le seguenti st
     \label{fig:residui_thevenin_1}
 \end{figure}
 
-
-
-
-Prima di confrontare i due diversi risultati e stabilire la veridicità del teorema, eseguiamo la misura della reistenza effettiva usata nel circuito con l'RCL meter. (Il voltaggio imposto lo consideriamo senza errore invece)
-Con una misura di \(R= \qty{149(0,5)}{\ohm}\) proseguiamo a verificare le consistenze dei dati:
+Prima di confrontare i due diversi risultati e stabilire la veridicità del teorema, eseguiamo la 
+misura della reistenza effettiva usata nel circuito con l'RCL meter. (Il voltaggio imposto lo 
+consideriamo senza errore invece). Con una misura di \(R= \qty{149(0,5)}{\ohm}\) proseguiamo a 
+verificare le consistenze dei dati:
 
 \subsection{Partitore di tensione}
+
+\begin{figure}[H]
+    \centering
+    \caption{Circtuito Thevenin partitore di tensione}
+    \includegraphics[width=0.4\textwidth]{thevenin_2.png}
+    \label{fig:circuito_thevenin_2}
+\end{figure}
+
 In questo circuito che funge come partitore di tensione, applicando il teorma con:
+
 \begin{itemize}[leftmargin=2cm]
     \item \(R_1 = R_2 = \qty{1.1}{\kilo\ohm}\)
     \item \(V_0 = \qty{15}{\volt}\)
 \end{itemize}
-troviamo le stime teoriche come segue: una resistenza  \(R_th \approx \qty{1.1}{\kilo\ohm}\) (il parallelo tra le due resistenze del partitore) e un voltaggio \(V_th \approx \qty{7.5}{\volt}\).
+
+Troviamo le stime teoriche come segue: una resistenza  \(R_{th} \approx \qty{1.1}{\kilo\ohm}\) (il 
+parallelo tra le due resistenze del partitore) e un voltaggio \(V_{th} \approx \qty{7.5}{\volt}\).
 
 \subsubsection{\textbf{Misure acquisite}}
-In seguito le tuple di dati utilizzati per il metodo della curva caratteristica:
-(Per le incertezze ci si è affidati anche stavolta ai manuali di utilizzo degli strumenti)
+In seguito le tuple di dati utilizzati per il metodo della curva caratteristica,
+(Per le incertezze ci si è affidati anche stavolta ai manuali di utilizzo degli strumenti):
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+I(\unit{\milli\ampere}) & V(\unit{\volt}) & \(\Delta\)I(\unit{\milli\ampere}) & \(\Delta\)V(\unit{\volt}) \\ \midrule
+1.4   & 5.99 & 0.03   & 0.03  \\
+1.5   & 5.84 & 0.03   & 0.03  \\
+1.7   & 5.67 & 0.03   & 0.03  \\
+1.9   & 5.45 & 0.03   & 0.03  \\
+2.1   & 5.17 & 0.03   & 0.03  \\
+2.4   & 4.80 & 0.03   & 0.03  \\
+2.9   & 4.28 & 0.03   & 0.02  \\
+3.6   & 3.50 & 0.03   & 0.02  \\
+4.8   & 2.23 & 0.03   & 0.01  \\ \bottomrule
+\end{tabular}
+\end{table}
 
 \subsubsection{\textbf{Analisi dati}}
 Procediamo con il fit del nostra curva caratteristica per trovare le seguenti stime sperimentali:
-(METTI FIT)
-Prima di confrontare i due diversi risultati e stabilire la veridicità del teorema, eseguiamo la misura effettiva (con l'RCL meter) delle reistenze usate nel circuito.
-Con una misura di \(R_1= \qty{2.193(0,006)}{\kilo\ohm}\) e \(R_2= \qty{2.164(0,006)}{\kilo\ohm}\), e ricalcolato allora \(R_th = \qty{1.089(0,003}{\kilo\ohm}\) e potenziale teorico \(V_th = \qty{7.45(0,02)}{\volt}\) (usate opportune propagazioni errori), controlliamo le consistenze dei dati:
+
+\begin{figure}[H]
+    \centering
+    \caption{Grafico Thevenin partitore di tensione}
+    \includegraphics[width=0.8\textwidth]{grafico_thevenin_2.png}
+    \label{fig:grafico_thevenin_2}
+\end{figure}
+
+\E stato inoltre ottenuto il seguente grafico dei residui:
+
+\begin{figure}[H]
+    \centering
+    \caption{Residui Thevenin partitore di tensione}
+    \includegraphics[width=0.8\textwidth]{residui_thevenin_2.png}
+    \label{fig:residui_thevenin_2}
+\end{figure}
+
+Prima di confrontare i due diversi risultati e stabilire la veridicità del teorema, eseguiamo la 
+misura effettiva (con l'RCL meter) delle reistenze usate nel circuito. Con una misura di 
+\(R_1= \qty{2.193(0,006)}{\kilo\ohm}\) e \(R_2= \qty{2.164(0,006)}{\kilo\ohm}\), e ricalcolato allora 
+\(R_{th} = \qty{1.089(0,003)}{\kilo\ohm}\) e potenziale teorico \(V_{th} = \qty{7.45(0,02)}{\volt}\) 
+(usate opportune propagazioni errori), controlliamo le consistenze dei dati:
+
+
 %\renewcommand{\thesection}{}
 %\renewcommand{\thesubsection}{\arabic{subsection})}
 \section{Conclusioni} %Conclusioni
