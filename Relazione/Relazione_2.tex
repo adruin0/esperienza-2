@@ -98,7 +98,7 @@
 %\bigskip
 
 \section{Introduzione}
-L’esperienza ha due scopi principali. Il primo obbiettivo è la misura di una resistenza incognita all'interno del ponte di Wheatstone di un circuito, sfruttando le proprietà della condizione di bilanciamento e l’utilizzo di una cassetta di resistenze variabile.
+L'esperienza ha due scopi principali. Il primo obbiettivo è la misura di una resistenza incognita all'interno del ponte di Wheatstone di un circuito, sfruttando le proprietà della condizione di bilanciamento e l’utilizzo di una cassetta di resistenze variabile.
 Il secondo è la verifica sperimentale del teorema di Thevenin. Il teorema verrà applicato a un secondo circuito configurato come partitore resistivo e a un terzo circuito configurato per simulare la misura della resistenza interna di un generatore di tensione.
 
 \section{Apparato sperimentale}
@@ -156,7 +156,7 @@ Di seguito sono riportati i valori misurati:
 \centering
 \begin{tabular}{@{}llll@{}}
 \toprule
-R(\(\Omega\)) & I(\(\unit{\micro\ampere}\)) & \(\Delta\)R(\(\Omega\)) & \(\Delta\)I(\(\unit{\micro\ampere}\)) \\ \midrule
+R(\unit{\ohm}) & I(\unit{\micro\ampere}) & \(\Delta\)R(\unit{\ohm}) & \(\Delta\)I(\unit{\micro\ampere}) \\ \midrule
 240         & 8.0   & 2                   & 0.3           \\
 250         & 6.0   & 3                   & 0.3           \\
 260         & 4.0   & 3                   & 0.3           \\
@@ -171,47 +171,165 @@ R(\(\Omega\)) & I(\(\unit{\micro\ampere}\)) & \(\Delta\)R(\(\Omega\)) & \(\Delta
 \subsection{\textbf{Analisi dati}}
 
 Tramite uno script di python è stato realizzato un grafico \(I / R_3\) ed è stato effettuato un fit 
-lineare del tipo \(I = A\cdot R + B\) per stimare il valore di \(R_3 \) 
+lineare del tipo \(I = A\cdot R + B\) per stimare il valore di \(R_3 \Rightarrow I = 0\). 
 
+\begin{figure}[H]
+    \centering
+    \caption{Grafico ponte di Wheatstone}
+    \includegraphics[width=0.8\textwidth]{grafico_wheatstone.png}
+    \label{fig:grafico_wheatstone}
+\end{figure}
 
+\E stato inoltre ottenuto il seguente grafico dei residui:
 
+\begin{figure}[H]
+    \centering
+    \caption{Residui ponte di Wheatstone}
+    \includegraphics[width=0.8\textwidth]{residui_wheatstone.png}
+    \label{fig:residui_wheatstone}
+\end{figure}
+
+Nel calcolo dell'incertezza di \(R_3\) è stato considerato anche il termine di covarianza tra \(A\) e 
+\(B\) attraverso la formula:
+
+\[\sigma_{R_3} = \frac{1}{A^2} \cdot \sigma^2_B + \frac{B^2}{A^4} \cdot \sigma^2_A + 
+2\left(-\frac{1}{A}\right)\left(+\frac{B}{A^2}\right)cov(A,B)\]
+
+Dal valore stimato di  \(R_3(0) = \qty{275.3(1.1)}{\ohm}\) è stato calcolato, attraverso la formula 
+precedentemente indicata, il valore stimato di \(R_x = \qty{148.8(0.9)}{\ohm}\) che è risultato consistente
+con il valore di \(R_4 = \qty{149(0.5)}{\ohm}\) misurato con l'RCL meter. 
 
 
 \section{Equivalenti di Thevelin}
 \subsection{Introduzione}
-In questa parte dell'esperimento dobbiamo verificare la veridicità del teorema di Thevelin, per fare ciò dovremmo misurare sperimentalmente, per tutti e due circuiti, una corrente di cortocircuito potenzialmente pericolosa. Sfruttiamo allora il metodo della curva caratteristica per entrambi.
+In questa parte dell'esperimento dobbiamo verificare la veridicità del teorema di Thevelin, per fare 
+ciò dovremmo misurare sperimentalmente, per tutti e due circuiti, una corrente di cortocircuito 
+potenzialmente pericolosa. Sfruttiamo allora il metodo della curva caratteristica per entrambi.
 
 \subsection{Simulazione resistenza interna generatore}
-(METTI PRIMO CIRCUITO TH)
-Dall'applicazione del teorema in questa configurazione, ci troviamo le stime teoriche come segue: una resistenza  \(R_th \approx \qty{150}{\ohm}\) e un voltaggio \(V_th \approx \qty{10}{\volt}\), che corrispondono al circuito stesso senza la resistenza variabile.
+
+\begin{figure}[H]
+    \centering
+    \caption{Circuito Thevenin resistenza interna}
+    \includegraphics[width=0.5\textwidth]{thevenin_1.png}
+    \label{fig:circuito_thevenin_1}
+\end{figure}
+
+Dall'applicazione del teorema in questa configurazione, ci troviamo le stime teoriche come segue: una resistenza  \(R_th \approx \qty{150}{\ohm}\) e un voltaggio \(V_th \approx \qty{10}{\volt}\), che corrispondono al circuito stesso.
 
 \subsubsection{\textbf{Misure acquisite}}
-In seguito le tuple di dati utilizzati per il metodo della curva caratteristica:
-(Per le incertezze ci si è affidati ai manuali di utilizzo degli strumenti)
+In seguito le tuple di dati utilizzati per il metodo della curva caratteristica,
+(Per le incertezze ci si è affidati ai manuali di utilizzo degli strumenti):
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+I(\unit{\milli\ampere}) & V(\unit{\volt}) & \(\Delta\)I(\unit{\milli\ampere}) & \(\Delta\)V(\unit{\volt}) \\ \midrule
+5.0   & 9.3  & 0.3    & 0.07  \\
+6.0   & 9.1  & 0.3    & 0.07  \\
+9.0   & 8.7  & 0.3    & 0.06  \\
+10.0  & 8.6  & 0.3    & 0.06  \\
+10.5  & 8.4  & 0.3    & 0.06  \\
+12.0  & 8.3  & 0.3    & 0.06  \\
+13.0  & 8.1  & 0.3    & 0.06  \\
+15.0  & 7.8  & 0.3    & 0.06  \\
+17.5  & 7.4  & 0.3    & 0.06  \\
+19.0  & 7.1  & 0.3    & 0.06  \\ \bottomrule
+\end{tabular}
+\end{table}
+
 
 \subsubsection{\textbf{Analisi dati}}
 Procediamo con il fit del nostra curva caratteristica per trovare le seguenti stime sperimentali:
-(METTI FIT)
-Prima di confrontare i due diversi risultati e stabilire la veridicità del teorema, eseguiamo la misura della reistenza effettiva usata nel circuito con l'RCL meter. (Il voltaggio imposto lo consideriamo senza errore invece)
-Con una misura di \(R= \qty{149(0,5)}{\ohm}\) proseguiamo a verificare le consistenze dei dati:
+
+\begin{figure}[H]
+    \centering
+    \caption{Grafico Thevenin resistenza interna}
+    \includegraphics[width=0.8\textwidth]{grafico_thevenin_1.png}
+    \label{fig:grafico_thevenin_1}
+\end{figure}
+
+\E stato inoltre ottenuto il seguente grafico dei residui:
+
+\begin{figure}[H]
+    \centering
+    \caption{Residui Thevenin resistenza interna}
+    \includegraphics[width=0.8\textwidth]{residui_thevenin_1.png}
+    \label{fig:residui_thevenin_1}
+\end{figure}
+
+Prima di confrontare i due diversi risultati e stabilire la veridicità del teorema, eseguiamo la 
+misura della reistenza effettiva usata nel circuito con l'RCL meter. (Il voltaggio imposto lo 
+consideriamo senza errore invece). Con una misura di \(R= \qty{149(0,5)}{\ohm}\) proseguiamo a 
+verificare le consistenze dei dati:
 
 \subsection{Partitore di tensione}
+
+\begin{figure}[H]
+    \centering
+    \caption{Circtuito Thevenin partitore di tensione}
+    \includegraphics[width=0.4\textwidth]{thevenin_2.png}
+    \label{fig:circuito_thevenin_2}
+\end{figure}
+
 In questo circuito che funge come partitore di tensione, applicando il teorma con:
+
 \begin{itemize}[leftmargin=2cm]
     \item \(R_1 = R_2 = \qty{1.1}{\kilo\ohm}\)
     \item \(V_0 = \qty{15}{\volt}\)
 \end{itemize}
-troviamo le stime teoriche come segue: una resistenza  \(R_th \approx \qty{1.1}{\kilo\ohm}\) (il parallelo tra le due resistenze del partitore) e un voltaggio \(V_th \approx \qty{7.5}{\volt}\).
+
+Troviamo le stime teoriche come segue: una resistenza  \(R_{th} \approx \qty{1.1}{\kilo\ohm}\) (il 
+parallelo tra le due resistenze del partitore) e un voltaggio \(V_{th} \approx \qty{7.5}{\volt}\).
 
 \subsubsection{\textbf{Misure acquisite}}
-In seguito le tuple di dati utilizzati per il metodo della curva caratteristica:
-(Per le incertezze ci si è affidati anche stavolta ai manuali di utilizzo degli strumenti)
+In seguito le tuple di dati utilizzati per il metodo della curva caratteristica,
+(Per le incertezze ci si è affidati anche stavolta ai manuali di utilizzo degli strumenti):
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+I(\unit{\milli\ampere}) & V(\unit{\volt}) & \(\Delta\)I(\unit{\milli\ampere}) & \(\Delta\)V(\unit{\volt}) \\ \midrule
+1.4   & 5.99 & 0.03   & 0.03  \\
+1.5   & 5.84 & 0.03   & 0.03  \\
+1.7   & 5.67 & 0.03   & 0.03  \\
+1.9   & 5.45 & 0.03   & 0.03  \\
+2.1   & 5.17 & 0.03   & 0.03  \\
+2.4   & 4.80 & 0.03   & 0.03  \\
+2.9   & 4.28 & 0.03   & 0.02  \\
+3.6   & 3.50 & 0.03   & 0.02  \\
+4.8   & 2.23 & 0.03   & 0.01  \\ \bottomrule
+\end{tabular}
+\end{table}
 
 \subsubsection{\textbf{Analisi dati}}
 Procediamo con il fit del nostra curva caratteristica per trovare le seguenti stime sperimentali:
-(METTI FIT)
-Prima di confrontare i due diversi risultati e stabilire la veridicità del teorema, eseguiamo la misura effettiva (con l'RCL meter) delle reistenze usate nel circuito.
-Con una misura di \(R_1= \qty{2.193(0,006)}{\kilo\ohm}\) e \(R_2= \qty{2.164(0,006)}{\kilo\ohm}\), e ricalcolato allora \(R_th = \qty{1.089(0,003}{\kilo\ohm}\) e potenziale teorico \(V_th = \qty{7.45(0,02)}{\volt}\) (usate opportune propagazioni errori), controlliamo le consistenze dei dati:
+
+\begin{figure}[H]
+    \centering
+    \caption{Grafico Thevenin partitore di tensione}
+    \includegraphics[width=0.8\textwidth]{grafico_thevenin_2.png}
+    \label{fig:grafico_thevenin_2}
+\end{figure}
+
+\E stato inoltre ottenuto il seguente grafico dei residui:
+
+\begin{figure}[H]
+    \centering
+    \caption{Residui Thevenin partitore di tensione}
+    \includegraphics[width=0.8\textwidth]{residui_thevenin_2.png}
+    \label{fig:residui_thevenin_2}
+\end{figure}
+
+Prima di confrontare i due diversi risultati e stabilire la veridicità del teorema, eseguiamo la 
+misura effettiva (con l'RCL meter) delle reistenze usate nel circuito. Con una misura di 
+\(R_1= \qty{2.193(0,006)}{\kilo\ohm}\) e \(R_2= \qty{2.164(0,006)}{\kilo\ohm}\), e ricalcolato allora 
+\(R_{th} = \qty{1.089(0,003)}{\kilo\ohm}\) e potenziale teorico \(V_{th} = \qty{7.45(0,02)}{\volt}\) 
+(usate opportune propagazioni errori), controlliamo le consistenze dei dati:
+
+
 %\renewcommand{\thesection}{}
 %\renewcommand{\thesubsection}{\arabic{subsection})}
 \section{Conclusioni} %Conclusioni

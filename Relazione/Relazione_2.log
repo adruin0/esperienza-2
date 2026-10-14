@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.28)  14 OCT 2026 16:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.28)  14 OCT 2026 17:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -507,14 +507,60 @@ Package hyperref Info: Link coloring ON on input line 83.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<./immagini/ponte_wheatstone.png, id=55, 361.35pt x 260.975pt>
+<./immagini/ponte_wheatstone.png, id=63, 361.35pt x 260.975pt>
 File: ./immagini/ponte_wheatstone.png Graphic file (type png)
 <use ./immagini/ponte_wheatstone.png>
 Package pdftex.def Info: ./immagini/ponte_wheatstone.png  used on input line 137.
 (pdftex.def)             Requested size: 256.07481pt x 184.94312pt.
  [1
 
-{C:/Users/adria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2 <./immagini/ponte_wheatstone.png>] [3] (Relazione_2.aux
+{C:/Users/adria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+<./immagini/grafico_wheatstone.png, id=82, 578.16pt x 433.62pt>
+File: ./immagini/grafico_wheatstone.png Graphic file (type png)
+<use ./immagini/grafico_wheatstone.png>
+Package pdftex.def Info: ./immagini/grafico_wheatstone.png  used on input line 179.
+(pdftex.def)             Requested size: 409.72125pt x 307.2901pt.
+ [2 <./immagini/ponte_wheatstone.png>]
+<./immagini/residui_wheatstone.png, id=90, 722.7pt x 324.4923pt>
+File: ./immagini/residui_wheatstone.png Graphic file (type png)
+<use ./immagini/residui_wheatstone.png>
+Package pdftex.def Info: ./immagini/residui_wheatstone.png  used on input line 188.
+(pdftex.def)             Requested size: 409.72125pt x 183.9673pt.
+ [3 <./immagini/grafico_wheatstone.png> <./immagini/residui_wheatstone.png>]
+<./immagini/thevenin_1.png, id=100, 301.125pt x 260.975pt>
+File: ./immagini/thevenin_1.png Graphic file (type png)
+<use ./immagini/thevenin_1.png>
+Package pdftex.def Info: ./immagini/thevenin_1.png  used on input line 214.
+(pdftex.def)             Requested size: 256.07481pt x 221.95325pt.
+<./immagini/grafico_thevenin_1.png, id=101, 578.16pt x 433.62pt>
+File: ./immagini/grafico_thevenin_1.png Graphic file (type png)
+<use ./immagini/grafico_thevenin_1.png>
+Package pdftex.def Info: ./immagini/grafico_thevenin_1.png  used on input line 249.
+(pdftex.def)             Requested size: 409.72125pt x 307.2901pt.
+ [4 <./immagini/thevenin_1.png>]
+<./immagini/residui_thevenin_1.png, id=108, 722.7pt x 324.4923pt>
+File: ./immagini/residui_thevenin_1.png Graphic file (type png)
+<use ./immagini/residui_thevenin_1.png>
+Package pdftex.def Info: ./immagini/residui_thevenin_1.png  used on input line 258.
+(pdftex.def)             Requested size: 409.72125pt x 183.9673pt.
+<./immagini/thevenin_2.png, id=109, 281.05pt x 260.975pt>
+File: ./immagini/thevenin_2.png Graphic file (type png)
+<use ./immagini/thevenin_2.png>
+Package pdftex.def Info: ./immagini/thevenin_2.png  used on input line 272.
+(pdftex.def)             Requested size: 204.85672pt x 190.22345pt.
+ [5 <./immagini/grafico_thevenin_1.png> <./immagini/residui_thevenin_1.png>]
+<./immagini/grafico_thevenin_2.png, id=118, 578.16pt x 433.62pt>
+File: ./immagini/grafico_thevenin_2.png Graphic file (type png)
+<use ./immagini/grafico_thevenin_2.png>
+Package pdftex.def Info: ./immagini/grafico_thevenin_2.png  used on input line 313.
+(pdftex.def)             Requested size: 409.72125pt x 307.2901pt.
+ [6 <./immagini/thevenin_2.png>]
+<./immagini/residui_thevenin_2.png, id=125, 722.7pt x 324.4923pt>
+File: ./immagini/residui_thevenin_2.png Graphic file (type png)
+<use ./immagini/residui_thevenin_2.png>
+Package pdftex.def Info: ./immagini/residui_thevenin_2.png  used on input line 322.
+(pdftex.def)             Requested size: 409.72125pt x 183.9673pt.
+ [7 <./immagini/grafico_thevenin_2.png> <./immagini/residui_thevenin_2.png>] (Relazione_2.aux
 Package cleveref Info: loaded `italian' language definitions on input line 7.
 Package cleveref Info: loaded `italian' language definitions on input line 8.
 )
@@ -523,20 +569,20 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
 Package rerunfilecheck Info: File `Relazione_2.out' has not changed.
-(rerunfilecheck)             Checksum: DBC09A527232EDB4B3EE9DC708638111;2210.
+(rerunfilecheck)             Checksum: E9623AEAFE9112F67D24E33D713688F8;2534.
  ) 
 Here is how much of TeX's memory you used:
- 18629 strings out of 467691
- 369323 string characters out of 5414987
+ 18737 strings out of 467691
+ 372614 string characters out of 5414987
  804598 words of memory out of 5000000
- 47498 multiletter control sequences out of 15000+600000
+ 47590 multiletter control sequences out of 15000+600000
  635974 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,13n,80p,630b,1053s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\adria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\adria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx2488.pk><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Relazione_2.pdf (3 pages, 158194 bytes).
+ 73i,13n,80p,630b,1078s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\adria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\adria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx2488.pk><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/adria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Relazione_2.pdf (7 pages, 357348 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
